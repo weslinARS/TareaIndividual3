@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora edad Canina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row1">
+            <img src="img/perro.png" id="img" alt="">
+            <div>
+                <h1>Calculadora de edad canina</h1>
+                <form action="" method="" id="calculadora">
+                    <label for="EdadHumana">
+                        <p>Ingrese la edad de su mascota</p>
+                    </label>
+                    <input type="text" placeholder="Aquí la edad" id="EdadHumana" name = "EdadHumana">
+                    <input type="button" value="Calcular" id="boton" onclick="calcularEdad()">
+                </form>
+            </div>
+        </div>
+        <div class="row2">
+            <p id="edadCanina"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
